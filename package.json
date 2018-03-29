@@ -1,0 +1,31 @@
+{
+  "name": "content-disposition-filename",
+  "version": "0.0.1",
+  "description": "Read filename from content disposition header",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/standard",
+    "lint:fix": "./node_modules/.bin/standard --fix",
+    "test": "./node_modules/.bin/ava",
+    "test:watch": "./node_modules/.bin/ava --watch"
+  },
+  "keywords": [],
+  "author": "James Delibas <jdelibas@gmail.com> (https://jamjar.rocks/)",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "standard": "^11.0.1"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.test.js"
+    ],
+    "source": [
+      "src/**/*.js"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "tap": false,
+    "powerAssert": false
+  }
+}
